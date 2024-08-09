@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>My Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="mediaqueries.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Kevin Serafin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Kevin Serafin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="resources/profile-picture-kevinserafin.jpeg" alt="profile picture-kevin">
+      </div>
+      <div class="section_text">
+        <p class="section_text-p1">Hi, I'm</p>
+        <h1 class="title">Kevin Serafin</h1>
+        <p class="section_text-p2">Computer Engineering Major</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('resources/Resume - Kevin Serafin 2024.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="resources/Color-of-the-LinkedIn-Logo.jpeg" alt="My LinkedIn profile" 
+               class="icon" onclick="window.location.href='https://www.linkedin.com/in/kevinserafin24'">
+          <img src="resources/GitHub-Mark-ea2971cee799.png" alt="My GitHub Profile" 
+               class="icon" onclick="window.location.href='https://github.com/drserafin'">
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* when scren is 1200 pixels wide , hide desktop menu 
+ and show the hamburger menu instead */
+ @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) { /* Adjust the max-width value as needed */
+    #profile {
+      flex-direction: column; /* Stack elements vertically */
+      height: auto; /* Adjust height to fit content */
+      gap: 1rem; /* Adjust gap between elements */
+    }
+  
+    .section_pic-container {
+      height: 300px; /* Adjust height for smaller screens if needed */
+      width: 300px; /* Adjust width for smaller screens if needed */
+    }
+  }
+  
+  
